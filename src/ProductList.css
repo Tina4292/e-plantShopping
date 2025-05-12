@@ -196,6 +196,14 @@ body {
     
 }
 
+.cart-icon-link {
+  position: relative;
+}
+
+.cart-icon {
+  vertical-align: middle;
+}
+
 h2 {
   text-align: center;
   margin-bottom: 10px;

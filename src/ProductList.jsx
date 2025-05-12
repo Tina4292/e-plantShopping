@@ -282,12 +282,15 @@ function ProductList({ onHomeClick }) {
                 <div style={styleObjUl}>
                     <div> <a href="#" onClick={(e) => handlePlantsClick(e)} style={styleA}>Plants</a></div>
                     <div style={{ position: 'relative' }}>
-                        <a href="#" onClick={(e) => handleCartClick(e)} style={styleA}>
-                            <h1 className='cart'>
-                            {/* your cart SVG icon */}
-                            </h1>
+                        <a href="#" onClick={(e) => handleCartClick(e)} style={styleA} className="cart-icon-link">
+                            <img
+                                src="https://www.svgrepo.com/show/528106/shopping-bag-alt.svg"
+                                alt="Cart"
+                                className="cart-icon"
+                                style={{ width: '40px', height: '40px' }}
+                            />
                             {totalItems > 0 && (
-                            <span className="cart_quantity_count">{totalItems}</span>
+                                <span className="cart_quantity_count">{totalItems}</span>
                             )}
                         </a>
                     </div>
