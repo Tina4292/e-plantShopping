@@ -263,7 +263,9 @@ function ProductList({ onHomeClick }) {
     const handleContinueShopping = (e) => {
         e.preventDefault();
         setShowCart(false);
+        setShowPlants(true); // <--- Add this line to switch back to products view
     };
+
     return (
         <div>
             <div className="navbar" style={styleObj}>
