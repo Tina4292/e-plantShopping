@@ -15,7 +15,7 @@ const CartItem = ({ onContinueShopping }) => {
   };
 
   const handleContinueShopping = () => {
-    onContinueShopping();
+    onContinueShopping(); // do NOT expect or use e
   };
 
 
