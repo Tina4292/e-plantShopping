@@ -14,9 +14,8 @@ const CartItem = ({ onContinueShopping }) => {
     }, 0).toFixed(2);
   };
 
-  const handleContinueShopping = (e) => {
-    e.preventDefault();
-    onContinueShopping(); // calls the function passed from ProductList.jsx
+  const handleContinueShopping = () => {
+    onContinueShopping();
   };
 
 
@@ -71,7 +70,7 @@ const CartItem = ({ onContinueShopping }) => {
       </div>
       <div style={{ marginTop: '20px', color: 'black' }} className='total_cart_amount'></div>
       <div className="continue_shopping_btn">
-        <button className="get-started-button" onClick={(e) => handleContinueShopping(e)}>Continue Shopping</button>
+        <button className="get-started-button" onClick={handleContinueShopping}>Continue Shopping</button>
         <br />
         <button className="get-started-button1" onClick={handleCheckoutShopping}>Checkout</button>
       </div>
