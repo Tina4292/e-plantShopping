@@ -260,9 +260,8 @@ function ProductList({ onHomeClick }) {
         setShowCart(false); // Hide the cart when navigating to About Us
     };
 
-    const handleContinueShopping = (e) => {
-        e.preventDefault();
-        setShowCart(false); // that's all you need to return to the product listing
+    const handleContinueShopping = () => {
+        setShowCart(false);
     };
 
     return (
