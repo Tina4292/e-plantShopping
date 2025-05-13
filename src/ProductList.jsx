@@ -262,8 +262,7 @@ function ProductList({ onHomeClick }) {
 
     const handleContinueShopping = (e) => {
         e.preventDefault();
-        setShowCart(false);
-        setShowPlants(true); // <--- Add this line to switch back to products view
+        setShowCart(false); // that's all you need to return to the product listing
     };
 
     return (
